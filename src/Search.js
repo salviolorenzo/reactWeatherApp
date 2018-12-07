@@ -7,7 +7,6 @@ function Search(props) {
         type="text"
         placeholder="Search"
         name="search"
-        value="London"
         onChange={props.onChange}
       />
       <input type="submit" value="Search" />
