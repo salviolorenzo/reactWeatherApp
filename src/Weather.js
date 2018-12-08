@@ -66,21 +66,21 @@ class Weather extends Component {
     if (this.state.temperature === '') {
       return (
         <div
-          className="mainBody"
+          className='mainBody'
           style={createBackSplash(
             `https://images.unsplash.com/photo-1514477917009-389c76a86b68?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM5NDQyfQ`
           )}
         >
+          <h1>Check The Temp</h1>
           <Search
             onSubmit={this._onSubmit.bind(this)}
             onChange={this._onChange.bind(this)}
           />
-          <h1>Check The Temp</h1>
         </div>
       );
     } else {
       return (
-        <div className="mainBody" style={createBackSplash(this.state.url)}>
+        <div className='mainBody' style={createBackSplash(this.state.url)}>
           <Stats
             name={this.state.name}
             temperature={`${this.state.temperature}°F`}
